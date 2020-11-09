@@ -1,0 +1,116 @@
+@charset 'utf-8';
+
+$tablet : 1179px;
+$mobile : 539px;
+$color : #a37f64;
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arapey|Baloo+Chettan+2|Cardo|Taviraj&display=swap');
+
+/* reset */
+* {margin:0px; padding:0px;}
+ul,ol,li {list-style:none;}
+a {text-decoration:none; outline:1; color:#777;}
+img, fieldset {border:0;}
+table, th, td {border-collapse: collapse;}
+input, select, textarea, form, img, label {vertical-align:middle; box-sizing:border-box;}
+input::-ms-clear{display:none}
+textarea {resize:none;}
+button {border:0;cursor: pointer;}
+.hidden {position:absolute; top:-999999px; opacity:0;}
+body {position:relative;font-family:'Baloo Chettan 2', cursive, sans-serif, cursive, sans-serif;color:#000}
+#skipnavigation a {position:absolute;top:-30px}
+
+//main
+@import 'main/header/header';
+@import 'main/aside/aside';
+@import 'main/visual/visual';
+@import 'main/info/info';
+@import 'main/service/service';
+@import 'main/product/product';
+@import 'main/work/work';
+@import 'main/popular/popular';
+@import 'main/skipnavi/skipnavi';
+@import 'main/footer/footer';
+
+//sub common layout
+/* visual */
+#visualSub {
+    position:relative;margin-top:75px;width:100%;background:$color;
+    .inner {
+        position:relative;z-index:1;overflow:hidden;display:table;width:1180px;height:400px;margin:0 auto;
+        .sub_visual {
+            display:table-cell;vertical-align:middle;height:100%;
+            strong {
+                position:relative;display:block;padding:0 30px;font-size:30px;color:#fff;font-weight:normal;text-shadow:2px 1px rgba(0,0,0,.6);opacity:.9;
+                &::after {
+                    position:absolute;left:27px;top:-57px;right:0;bottom:0;width:50px;height:50px;background:url(../images/logo2.png) no-repeat 0 0;background-size:50px auto;content:"";opacity:1;
+                }
+                .txt_tit {
+                    display:block;font-weight:normal;font-size:20px;color:#fff;
+                }
+            }
+            .link_tit {
+                display:block;width:180px;height:60px;margin:30px auto 0;background:#fff;border-radius:30px;font-size:20px;line-height:60px;color:$color;
+            }
+        }
+    }
+    &::after {
+        position:absolute;left:0;top:0;right:0;bottom:0;background:$color;content:"";opacity:.3;
+    }
+}
+
+
+/* info */
+#infoSub {
+    width:100%;padding:100px 0;background:#fff;
+    .inner {
+        width:1180px;margin:0 auto;
+        &:after {
+            content:"";display:block;clear:both;
+        }
+        h1 {
+            margin-bottom:70px;font-size:30px;text-align:center;color:$color;
+        }
+    }
+}
+
+/* ------ tablet ------ */
+@media screen and (max-width:$tablet){
+    /* visual */
+    #visualSub {
+        margin-top:61px;
+        .inner {
+            width:100%;height:350px;
+            h1 {
+                font-size:30px;
+            }
+        }  
+    }
+    /* info */
+    #infoSub {
+        padding:50px 30px 70px;box-sizing:border-box;
+        .inner {
+            width:100%;
+            h1 {
+                margin-bottom:60px;font-size:25px
+            }
+        }
+    }
+}
+
+/* ------ mobile ------ */
+@media screen and (max-width:$mobile){
+    /* info */
+    #infoSub {
+        padding:50px 15px 70px; 
+    } 
+}
+
+//sub
+@import 'sub/department/department';
+@import 'sub/community/community';
+@import 'sub/members/members';
+@import 'sub/gallery/gallery';
+@import 'sub/location/location';
+

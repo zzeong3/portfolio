@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>기업형_메인</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/34134c43a5.js" crossorigin="anonymous"></script>
+    <script src="static/jquery-1.8.3.min.js"></script>
+    <script src="static/jquery.easing.1.3.js"></script>
+    <script src="js/custom_comm.min.js"></script>
+    <script src="js/custom_main.min.js"></script>
+</head>
+<body>
+    <div id="skipnavigation">
+        <a href="#gnb">메뉴 바로가기</a>
+        <a href="#visual">본문 바로가기</a>
+    </div>
+    <header id="header">
+        <h1 class="logo"><a href="index.html" class="link_logo"><img src="../images/logo.png" class="img" alt="Veronica for London"></a></h1>
+        <div class="wrap_gnb">
+            <ul id="gnb">
+                <li>
+                    <a href="department.html">Department</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="community.html">Community</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="members.html">Members</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <strong class="hidden">sns공유</strong>
+        <ul class="list_sns">
+            <li><a href="#" class="link">페이스북</a></li>
+            <li><a href="#" class="link">트위터</a></li>
+            <li><a href="#" class="link">인스타그램</a></li>
+        </ul>
+        <button type="button" class="btn_close"><i class="fa fa-bars"><span class="hidden">메뉴</span></i></button>
+    </header>
+    <aside>
+        <div class="img_popup"><img src="images/popup.jpg" class="img" alt=""></div>
+        <strong class="hidden">VERONICA FOR LONDON 신규 회원을 위한 특별한 혜택</strong>
+        <p class="hidden">신규 가입하신 회원분들 모두에게 10% 할인 쿠폰을 드립니다.</p>
+        <strong class="hidden">유의사항</strong>
+        <ul class="hidden">
+            <li>회원가입시 꼭 SMS과 이메일 수신동의 해주셔야 발급되오니 이점 참고하여주세요</li>
+            <li>결제전 주문서 작성 페이지에서 쿠폰적용 버튼을 누르시면 발급된 쿠폰을 사용하실 수 있습니다.</li>
+        </ul>
+        <div class="info_popup">
+            <input type="checkbox" id="inp_check">
+            <label for="inp_check">오늘 하루 열지 않음</label>
+            <button type="button" class="btn_popup_close">닫기</button>
+        </div>
+    </aside>
+
+    <figure id="visual">
+        <div class="inner">
+            <div class="wrap_visual">
+                <ul>
+                    <li class="wrap1"></li>
+                    <li class="wrap2"></li>
+                    <li class="wrap3"></li>
+                    <li class="wrap4"></li>
+                    <li class="wrap5"></li>
+                </ul>
+            </div>
+            <div class="box_visual">
+                <ul>
+                    <li class="box1"></li>
+                    <li class="box2"></li>
+                    <li class="box3"></li>
+                    <li class="box4"></li>
+                    <li class="box5"></li>
+                </ul>
+                <button type="button" class="btn_prev"><span class="hidden">prev</span></button>
+                <button type="button" class="btn_next"><span class="hidden">next</span></button>
+                <img src="images/btnPrev.png" class="btnPrev" alt="">
+                <img src="images/btnNext.png" class="btnNext" alt="">
+            </div>
+            <div class="info_visual">
+                <ul>
+                    <li class="info1">
+                        <div class="cont_info">
+                            <strong>Shoes</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat!
+                            </p>
+                            
+                        </div>
+                    </li>
+                    <li class="info2">
+                        <div class="cont_info">
+                            <strong>Jewelry</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat!
+                            </p>                
+                        </div>
+                    </li>
+                    <li class="info3">
+                        <div class="cont_info">
+                            <strong>Knitwear</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cum!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info4">
+                        <div class="cont_info">
+                            <strong>Things</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info5">
+                        <div class="cont_info">
+                            <strong>Bags</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quaerat!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </figure>
+    <section id="info">
+        <div class="inner">
+            <h1>
+                <span class="txt_tit">Lorem, ipsum dolor.</span>
+                Lorem ipsum dolor sit.
+            </h1>
+            <div class="wrap_info">
+                <article>
+                    <span class="thumb_item"><i class="fas fa-tags"></i></span>
+                    <h2 class="tit_item">Lorem ipsum dolor sit.</h2>
+                    <p class="desc_item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur iure expedita optio.</p>
+                    <a href="#" class="link_more">READ MORE</a>
+                </article>
+                <article>
+                    <span class="thumb_item"><i class="fas fa-gift"></i></span>
+                    <h2 class="tit_item">Lorem.</h2>
+                    <p class="desc_item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="link_more">READ MORE</a>
+                </article>
+                <article>
+                    <span class="thumb_item"><i class="fas fa-gem"></i></span>
+                    <h2 class="tit_item">Lorem ipsum dolor sit Lorem ipsum dolor sit.</h2>
+                    <p class="desc_item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sed perspiciatis quibusdam animi maiores quisquam nobis expedita blanditiis asperiores incidunt.</p>
+                    <a href="#" class="link_more">READ MORE</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <h1 class="hidden">service</h1>
+        <dl class="visual_service">
+            <dt><a href="#contService1" class="btn_menu on">TAB1</a></dt>
+            <dd id="contService1" class="cont_service">
+                <div class="inner">
+                    <h2 class="tit_service">
+                        <span class="txt_tit">1. Lorem ipsum dolor sit amet.</span>
+                        Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="desc_service">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quidem molestias earum mollitia neque explicabo, quibusdam impedit similique soluta a.</p>
+                    <a href="#" class="link_more">READ MORE</a>  
+                </div>
+                <div class="bg_service on"></div>
+            </dd>
+            <dt><a href="#contService2" class="btn_menu">TAB2</a></dt>
+            <dd id="contService2" class="cont_service" style="display:none">
+                <div class="inner">
+                    <h2 class="tit_service">
+                        <span class="txt_tit">2. Lorem ipsum dolor sit amet.</span>
+                        Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="desc_service">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus .</p>
+                    <a href="#" class="link_more">READ MORE</a>
+                </div>
+                <div class="bg_service"></div>
+            </dd>
+            <dt><a href="#contService3" class="btn_menu">TAB3</a></dt>
+            <dd id="contService3" class="cont_service" style="display:none">
+                <div class="inner">
+                    <h2 class="tit_service">
+                        <span class="txt_tit">3. Lorem ipsum dolor sit amet.</span>
+                        Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p class="desc_service">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quidem molestias earum </p>
+                    <a href="#" class="link_more">READ MORE</a>
+                </div>
+                <div class="bg_service"></div>
+            </dd>
+        </dl>   
+    </section>  
+    <section id="product">
+        <div class="cont_right">
+            <h1><span class="point">Veronica</span> for London<span class="txt">THINKING DIFFREDNT</span></h1>
+            <strong class="tit_product">DESIGN IS NOT EASY TO THINK</strong>
+            <p class="desc_product">
+                A vitae, modi labore animi assumenda, dolore quod unde voluptate autem praesentium alias vero cumque placeat perferendis quis hic ab odio quae expedita asperiores minima nihil architecto.<br><br>
+                Quae facere consequatur rem totam explicabo inventore id ducimus reiciendis minima ipsum! Molestiae molestias alias distinctio.
+            </p>
+            <a href="#" class="link_product">LEAN MORE</a>
+            <div class="bg_product" style="background-image:url(images/img16.jpg)"></div>
+            </>
+            <div class="box_product">
+                <h2><span class="txt">With</span> veronica</h2>
+                <p class="desc_product">
+                    A vitae, modi labore animi assumenda, dolore quod unde voluptate autem praesentium alias vero cumque placeat perferendis quis hic ab odio quae expedita asperiores minima nihil architecto.<br><br>
+                    Quae facere consequatur rem totam explicabo inventore id ducimus reiciendis minima ipsum! Molestiae molestias alias distinctio.
+                </p>
+                <a href="#" class="link_product">LEAN MORE</a>
+            </div>
+        </div>
+        <div class="cont_left">
+            <div class="bg_product" style="background-image:url(images/img12.jpg)"></div>
+            <div class="box_product">
+                <p class="desc_product">
+                    A vitae, modi labore animi assumenda, dolore quod unde voluptate autem praesentium alias vero cumque.<br><br>
+                    Quae facere consequatur rem totam explicabo inventore id ducimus reiciendis minima ipsum! Molestiae molestias alias distinctio
+                </p>
+                <a href="#" class="link_product">LEAN MORE</a>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <div class="inner">
+            <h1>
+                <span class="txt_tit">Lorem ipsum</span>
+                Lorem ipsum dolor sit amet.
+            </h1>
+            <ul class="list_work">
+                <li>
+                    <div class="cont_work">
+                        <strong class="tit_work">
+                            <span class="txt_tit">Lorem ipsum</span>
+                            <span class="txt_emph">Lorem ipsum</span> dolor sit amet.
+                        </strong>
+                        <p class="desc_work">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, asperiores.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb_work"></div>
+                </li>
+                <li>
+                    <div class="cont_work">
+                        <strong class="tit_work">
+                            <span class="txt_tit">Lorem ipsum</span>
+                            <span class="txt_emph">Lorem ipsum</span> dolor sit amet dolor sit amet.
+                        </strong>
+                        <p class="desc_work">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, asperiores.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb_work"></div>
+                </li>
+                <li>
+                    <div class="cont_work">
+                        <strong class="tit_work">
+                            <span class="txt_tit">Lorem ipsum</span>
+                            <span class="txt_emph">Lorem</span> dolor.
+                        </strong>
+                        <p class="desc_work">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb_work"></div>
+                </li>
+            </ul>
+            <a href="#" class="link_news">
+                <strong class="tit_news">LATEST NEWS</strong>
+                <p class="desc_news">Lorem ipsum dolor sit amet.</p>
+                <i class="far fa-envelope"></i>
+            </a>
+            <a href="#" class="link_news">
+                <strong class="tit_news">LATEST NEWS</strong>
+                <p class="desc_news">Lorem ipsum dolor sit amet.</p>
+                <i class="fas fa-chalkboard-teacher"></i>
+            </a>
+        </div>            
+    </section>
+    <section id="popular">
+        <h1 class="hidden">popular</h1>
+        <div class="wrap_popular">
+            <div class="banner_popular">
+                <ul>
+                    <li><a href="#" style="background-image:url(images/slide1.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide2.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide3.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide4.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide5.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide6.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide7.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide8.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide9.jpg)"></a></li>
+                    <li><a href="#" style="background-image:url(images/slide10.jpg)"></a></li>
+                </ul>	
+            </div>
+            <a href="#" class="btn_prev"></a>
+            <a href="#" class="btn_next"></a>
+        </div>
+    </section>
+    <ul id="navi">
+    	<li class="on"><button type="button"></button></li>
+    	<li class=""><button type="button"></button></li>
+    	<li class=""><button type="button"></button></li>
+    	<li class=""><button type="button"></button></li>
+    	<li class=""><button type="button"></button></li>
+    </ul>
+    <footer id="footer">
+        <div class="inner">
+            <ul class="menu_footer">
+                <li><a href="#" class="link_meun">Lorem</a></li>
+                <li><a href="#" class="link_meun">Lorem ipsum</a></li>
+                <li><a href="#" class="link_meun">Lorem ipsum</a></li>
+                <li><a href="#" class="link_meun">Lorem ipsum</a></li>
+            </ul>
+            <ul class="menu_footer">
+                <li><a href="#" class="link_meun">Policy</a></li>
+                <li><a href="#" class="link_meun">Terms</a></li>
+                <li><a href="#" class="link_meun">Customer</a></li>
+                <li><a href="#" class="link_meun">Contact us</a></li>
+            </ul>
+            <div class="copyright_footer">
+                <address>
+                    Address : DCODELAB, 60, Sajik-ro 8-gil, Jognro-gu, Seoul, Republic of Korea (Postal Code 03172) <br>
+                    TEL : +82-2-2100-2114 FAX: +82-2-2100-7999
+                </address>
+                <p class="copyright">Copyright © 2020 DCODELAB All Right reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<include src="../header/header.html"></include>
+
+<figure id="visualSub" class="members">
+    <div class="inner">
+        <div class="sub_visual">
+            <strong>
+                <span class="txt_tit">Veronoca for London</span>
+                Not a things, it a love
+            </strong>
+        </div>
+    </div>
+</figure>
+
+<section id="infoSub">
+    <div class="inner">
+        <h1>MEMBERS</h1>
+        <div class="info_form">
+            <form action="/" method="post" id="join">
+                <fieldset>
+                    <legend class="hidden">회원가입</legend>
+                    <div class="cont_form">
+                        <label for="name" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Name.</label>
+                        <input type="text" id="name" name="name" class="inp_required" placeholder="Your Name">
+                    </div>
+                    <div class="cont_form">
+                        <label for="id" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>ID.</label>
+                        <input type="text" id="id" name="id" class="inp_required" placeholder="Your ID">
+                    </div>
+                    <div class="cont_form">
+                        <label for="pwd" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Password.</label>
+                        <input type="password" id="pwd" name="pwd" class="inp_required" placeholder="Your Password">
+                    </div>
+                    <div class="cont_form">
+                        <label for="pwdConfirm" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Password Confirm.</label>
+                        <input type="password" id="pwdConfirm" name="pwdConfirm" class="inp_required" placeholder="Your Password Confirm">
+                    </div>
+                    <div class="cont_form cont_form_email">
+                        <label for="email" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Email.</label>
+                        <input type="text" id="email" name="email" class="inp_required" placeholder="Your Email Address">
+                        <span class="txt">@</span>
+                        <select id="domain" class="select_form" title="email domain">
+                            <option value="0">naver.com</option>
+                            <option value="1">daum.net</option>
+                            <option value="2">nate.com</option>
+                            <option value="3">gmail.com</option>
+                        </select>
+                    </div>
+                    <div class="cont_form cont_form_phone" id="phone">
+                        <label for="phone" class="lab_form" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Phone.</label>
+                        <div class="info_choice">
+                            <input type="radio" id="skt" name="phone" class="inp_radio"><label for="skt" class="lab_form">SKT</label>
+                            <input type="radio" id="kt" name="phone" class="inp_radio"><label for="kt" class="lab_form">KT</label>
+                            <input type="radio" id="lg" name="phone" class="inp_radio"><label for="lg" class="lab_form">LG</label>
+                            <input type="radio" id="etc" name="phone" class="inp_radio"><label for="etc" class="lab_form">ETC</label>
+                            <em class="msgInvalid">Please check!</em>
+                        </div>
+                        <select id="phone" class="select_form" title="Select carrier">
+                            <option value="0">010</option>
+                            <option value="1">011</option>
+                        </select>
+                        <input type="text" class="inp_required" title="Enter second digit of mobile phone" placeholder="Phone Number Check">
+                        <input type="text" class="inp_required" title="Enter third digit of mobile phone" placeholder="Phone Number Check">
+                    </div>
+                    <div class="cont_form" id="gender">
+                        <label for="gender" class="lab_form">Gender.</label>
+                        <div class="info_choice">
+                            <input type="radio" id="male" name="gender" class="inp_radio"><label for="male" class="lab_form">male</label>
+                            <input type="radio" id="female" name="gender" class="inp_radio"><label for="female" class="lab_form">female</label>
+                            <em class="msgInvalid">Please check!</em>
+                        </div>
+                    </div>
+                    <div class="cont_form">
+                        <label for="mesaage" class="lab_form">Your Message.</label>
+                        <textarea id="mesaage" name="mesaage" class="tf_form" placeholder="Type your message"></textarea>
+                    </div>
+                    <div class="cont_form cont_form_agree">
+                        <label class="lab_form">Notice & Terms.</label>
+                        <p class="notice">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eum itaque repudiandae tempora ex obcaecati eligendi iure aut ut, velit, aspernatur nulla at tenetur! Consectetur excepturi hic ducimus voluptate velit assumenda, blanditiis asperiores architecto fugiat, nam aperiam. Eius dignissimos commodi odio nemo quisquam laboriosam dolorum explicabo ex beatae, amet nesciunt saepe veniam vitae esse nihil sapiente ullam possimus maiores incidunt deleniti natus labore laudantium cupiditate corporis! Iste magni labore autem incidunt. Quod maiores corrupti ex repellendus at fugiat sapiente totam nesciunt ipsum nihil quasi obcaecati quia dolor, maxime ad in minima aspernatur nisi debitis! Veniam porro officiis non vitae doloremque.</p>
+                        <input type="checkbox" id="terms" class="inp_check"><label for="terms" class="lab_check">I agree.</label>
+                    </div>
+                    <div class="wrap_btn">
+                        <button type="reset" class="btn_member btn_cancle">Cancle</button>
+                        <button type="submit" class="btn_member btn_send">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+<include src="../footer/footer.html"></include>

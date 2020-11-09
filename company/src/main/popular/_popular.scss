@@ -1,0 +1,80 @@
+/* popular */
+#popular {
+    width:100%;
+    .wrap_popular {
+        width:100%;margin:0 auto;position:relative;box-sizing:border-box;
+        .banner_popular {
+            overflow:hidden;width:100%;min-height:200px;
+            ul { 
+                width:calc((100% / 4) * 10);// 화면에 보일 li의 넓이 * 패널갯수
+                margin-left:calc(-100% / 4);
+                &::after {
+                    content:"";display:block;clear:both;
+                }
+                li {
+                    overflow:hidden;float:left;width:calc(100% / 10);height:200px;box-sizing:border-box;display:flex;justify-content:center;align-items:center;
+                    a {
+                        position:relative;overflow:hidden;display:block;width:100%;height:100%;background-size:cover;background-position:center center;
+                        // &:after {
+                        //     position:absolute;left:0;right:0;top:0;bottom:0;z-index:1;background:rgba(255, 255, 255, 0.4);content:"";
+                        // }
+                        &:hover {
+                            transition:0.3s;transform:scale(1.05);
+                            &:after {
+                                display:none;
+                                }
+                            
+                        }  
+                    }
+                }
+            }
+        }
+        .btn_prev {
+            position:absolute;left:0;top:0;z-index:3;width:60px;height:100%;background:rgba(255, 255, 255, 0.4);
+            &:before {
+                position:absolute;left:50%;top:50%;margin:-20px 0 0 -10px;width:40px;height:40px;border-left:2px solid #fff;border-top:2px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);content: '';
+            }
+        }
+        .btn_next {
+            position:absolute;right:0;top:0;z-index:3;width:60px;height:100%;background:rgba(255, 255, 255, 0.4);
+            &:before {
+                position:absolute;left:50%;top:50%;margin:-20px 0 0 -32px;width:40px;height:40px;border-right:2px solid #fff;border-bottom:2px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);content: '';
+            }
+        }
+    }
+}
+
+/* ------ tablet ------ */
+@media screen and (max-width:$tablet){
+    #popular {
+        .wrap_popular .banner_popular {
+            min-height:180px;
+            ul {
+                width:calc((100% / 2) * 10);margin-left:calc(-100% / 2);
+                li {
+                    height:180px;
+                }
+            }
+        }
+    }
+       
+}
+
+/* ------ mobile ------ */
+@media screen and (max-width:$mobile){
+    #popular {
+        .wrap_popular .banner_popular {
+            ul {
+                width:calc((100% / 1) * 10);margin-left:calc(-100% / 1);
+                li {
+                    padding-right:0;
+                    a {
+                        &:after {display:none;}  
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

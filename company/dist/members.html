@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>기업형_서브</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/34134c43a5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3653b1b81098b41c2888b50159496e8"></script>
+    <script src="static/jquery-1.8.3.min.js"></script>
+    <script src="static/jquery.easing.1.3.js"></script>
+    <script src="js/custom_comm.min.js"></script>
+    <script src="js/custom_sub.min.js"></script>
+</head>
+<body class="sub">
+    <header id="header">
+        <h1 class="logo"><a href="index.html" class="link_logo"><img src="../images/logo.png" class="img" alt="Veronica for London"></a></h1>
+        <div class="wrap_gnb">
+            <ul id="gnb">
+                <li>
+                    <a href="department.html">Department</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="community.html">Community</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="members.html">Members</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+                    <ul>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                        <li><a href="#">2depth</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <strong class="hidden">sns공유</strong>
+        <ul class="list_sns">
+            <li><a href="#" class="link">페이스북</a></li>
+            <li><a href="#" class="link">트위터</a></li>
+            <li><a href="#" class="link">인스타그램</a></li>
+        </ul>
+        <button type="button" class="btn_close"><i class="fa fa-bars"><span class="hidden">메뉴</span></i></button>
+    </header>
+
+
+<figure id="visualSub" class="members">
+    <div class="inner">
+        <div class="sub_visual">
+            <strong>
+                <span class="txt_tit">Veronoca for London</span>
+                Not a things, it a love
+            </strong>
+        </div>
+    </div>
+</figure>
+
+<section id="infoSub">
+    <div class="inner">
+        <h1>MEMBERS</h1>
+        <div class="info_form">
+            <form action="/" method="post" id="join">
+                <fieldset>
+                    <legend class="hidden">회원가입</legend>
+                    <div class="cont_form">
+                        <label for="name" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Name.</label>
+                        <input type="text" id="name" name="name" class="inp_required" placeholder="Your Name">
+                    </div>
+                    <div class="cont_form">
+                        <label for="id" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>ID.</label>
+                        <input type="text" id="id" name="id" class="inp_required" placeholder="Your ID">
+                    </div>
+                    <div class="cont_form">
+                        <label for="pwd" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Password.</label>
+                        <input type="password" id="pwd" name="pwd" class="inp_required" placeholder="Your Password">
+                    </div>
+                    <div class="cont_form">
+                        <label for="pwdConfirm" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Password Confirm.</label>
+                        <input type="password" id="pwdConfirm" name="pwdConfirm" class="inp_required" placeholder="Your Password Confirm">
+                    </div>
+                    <div class="cont_form cont_form_email">
+                        <label for="email" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Email.</label>
+                        <input type="text" id="email" name="email" class="inp_required" placeholder="Your Email Address">
+                        <span class="txt">@</span>
+                        <select id="domain" class="select_form" title="email domain">
+                            <option value="0">naver.com</option>
+                            <option value="1">daum.net</option>
+                            <option value="2">nate.com</option>
+                            <option value="3">gmail.com</option>
+                        </select>
+                    </div>
+                    <div class="cont_form cont_form_phone" id="phone">
+                        <label for="phone" class="lab_form" class="lab_form"><span class="ico_required"><span class="hidden">Required input</span></span>Phone.</label>
+                        <div class="info_choice">
+                            <input type="radio" id="skt" name="phone" class="inp_radio"><label for="skt" class="lab_form">SKT</label>
+                            <input type="radio" id="kt" name="phone" class="inp_radio"><label for="kt" class="lab_form">KT</label>
+                            <input type="radio" id="lg" name="phone" class="inp_radio"><label for="lg" class="lab_form">LG</label>
+                            <input type="radio" id="etc" name="phone" class="inp_radio"><label for="etc" class="lab_form">ETC</label>
+                            <em class="msgInvalid">Please check!</em>
+                        </div>
+                        <select id="phone" class="select_form" title="Select carrier">
+                            <option value="0">010</option>
+                            <option value="1">011</option>
+                        </select>
+                        <input type="text" class="inp_required" title="Enter second digit of mobile phone" placeholder="Phone Number Check">
+                        <input type="text" class="inp_required" title="Enter third digit of mobile phone" placeholder="Phone Number Check">
+                    </div>
+                    <div class="cont_form" id="gender">
+                        <label for="gender" class="lab_form">Gender.</label>
+                        <div class="info_choice">
+                            <input type="radio" id="male" name="gender" class="inp_radio"><label for="male" class="lab_form">male</label>
+                            <input type="radio" id="female" name="gender" class="inp_radio"><label for="female" class="lab_form">female</label>
+                            <em class="msgInvalid">Please check!</em>
+                        </div>
+                    </div>
+                    <div class="cont_form">
+                        <label for="mesaage" class="lab_form">Your Message.</label>
+                        <textarea id="mesaage" name="mesaage" class="tf_form" placeholder="Type your message"></textarea>
+                    </div>
+                    <div class="cont_form cont_form_agree">
+                        <label class="lab_form">Notice & Terms.</label>
+                        <p class="notice">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eum itaque repudiandae tempora ex obcaecati eligendi iure aut ut, velit, aspernatur nulla at tenetur! Consectetur excepturi hic ducimus voluptate velit assumenda, blanditiis asperiores architecto fugiat, nam aperiam. Eius dignissimos commodi odio nemo quisquam laboriosam dolorum explicabo ex beatae, amet nesciunt saepe veniam vitae esse nihil sapiente ullam possimus maiores incidunt deleniti natus labore laudantium cupiditate corporis! Iste magni labore autem incidunt. Quod maiores corrupti ex repellendus at fugiat sapiente totam nesciunt ipsum nihil quasi obcaecati quia dolor, maxime ad in minima aspernatur nisi debitis! Veniam porro officiis non vitae doloremque.</p>
+                        <input type="checkbox" id="terms" class="inp_check"><label for="terms" class="lab_check">I agree.</label>
+                    </div>
+                    <div class="wrap_btn">
+                        <button type="reset" class="btn_member btn_cancle">Cancle</button>
+                        <button type="submit" class="btn_member btn_send">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer id="footer">
+        <div class="inner">
+            <ul class="menu_footer">
+                <li><a href="#" class="link_meun">Lorem</a></li>
+                <li><a href="#" class="link_meun">Lorem ipsum</a></li>
+                <li><a href="#" class="link_meun">Lorem ipsum</a></li>
+                <li><a href="#" class="link_meun">Lorem ipsum</a></li>
+            </ul>
+            <ul class="menu_footer">
+                <li><a href="#" class="link_meun">Policy</a></li>
+                <li><a href="#" class="link_meun">Terms</a></li>
+                <li><a href="#" class="link_meun">Customer</a></li>
+                <li><a href="#" class="link_meun">Contact us</a></li>
+            </ul>
+            <div class="copyright_footer">
+                <address>
+                    Address : DCODELAB, 60, Sajik-ro 8-gil, Jognro-gu, Seoul, Republic of Korea (Postal Code 03172) <br>
+                    TEL : +82-2-2100-2114 FAX: +82-2-2100-7999
+                </address>
+                <p class="copyright">Copyright © 2020 DCODELAB All Right reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

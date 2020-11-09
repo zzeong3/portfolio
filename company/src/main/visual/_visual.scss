@@ -1,0 +1,119 @@
+/* visual */
+#visual {
+    position:relative;width:100%;margin-top:75px;
+    .inner {
+        overflow:hidden;margin:0 auto;width:100%;height:calc(100vh - 74px);transition:.5s;
+        ul {
+            width:calc(100%*3);height:100%;margin-left:-100%;
+            li {
+                width:calc(100%/3);height:100%;float:left;background-size:cover;background-repeat:no-repeat;             
+            } 
+        }
+        .wrap_visual {
+            position:absolute;;width:100%;height:100%;top:0;left:0;overflow:hidden;
+            ul {
+                li {
+                    filter:blur(5px);
+                    $bg : ('slide3.jpg', 'img15.jpg', 'slide10.jpg', 'slide4.jpg', 'img14.jpg');
+                           
+                    @for $i from 1 through length($bg){               
+                        &.wrap#{$i} {background-image:url(../images/#{nth($bg,$i)});}
+                    }
+                }
+            }
+        }
+        .box_visual {
+            width:55%;height:70%;z-index:5;position:absolute;left:60px;top:50%;transform: translateY(-50%);;overflow:hidden;
+            ul {
+                li {
+                    $bg : ('slide3.jpg', 'img15.jpg', 'slide10.jpg', 'slide4.jpg', 'img14.jpg');    
+                    @for $i from 1 through length($bg){               
+                        &.box#{$i} {background-image:url(../../images/#{nth($bg,$i)});}
+                    }
+                }
+            }
+            button {
+                position:absolute;top:50%;margin-top:-55px;width:55px;height:110px;background:rgba(147,108,83,.4);
+            }
+            .btn_prev {
+                left:0;
+                &:after {
+                    display:inline-block;width:20px;height:40px;background:url(../images/btnPrev.png) no-repeat 0 0;content:"";
+                }
+            }
+            .btn_next {
+                right:0;
+                &:after {
+                    display:inline-block;width:20px;height:40px;background:url(../images/btnNext.png) no-repeat 0 0;content:"";
+                }
+            }
+        }
+        .info_visual {
+            width:500px;height:100%;position:absolute;right:0;top:0;overflow:hidden;
+            ul {
+                li {
+                    position:relative;width:100%;height:100%;background:rgba(147,108,83,.4);
+                    .cont_info {
+                        position:absolute;left:50px;right:50px;bottom:60px;font-family:'Cardo', serif;color:#fff;opacity:.7;
+                    }
+                    strong {
+                        display:block;font-weight:normal;font-size:60px;line-height:65px;letter-spacing:5px;
+                        &:before {
+                            display:block;margin-bottom:6px;width:38px;height:2px;background:#fff;content:"";
+                        }
+                    }
+                    p {
+                        font-size:16px;line-height:22px;margin-top:10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------ tablet ------ */
+@media screen and (max-width:$tablet){
+    #visual {
+        margin-top:60px;
+        #visual .inner {
+            width:100%;height:470px;
+            .box_visual {
+                width:450px;height:400px;
+            }
+        }
+    }
+}
+
+/* ------ mobile ------ */
+@media screen and (max-width:$mobile){
+    #visual .inner {
+        height:440px;
+        .box_visual {
+            width:100%;height:380px;left:0;top:0;transform:translateY(0);
+            ul {
+                li {
+                    background-size:cover;height:250px;background-position:50% 50%;
+                }
+            }
+        }
+        .info_visual {
+            left:0;width:100%;
+            ul {
+                li {
+                    .cont_info {
+                        left:30px;right:30px;bottom:30px;
+                    }
+                    strong {
+                        font-size:40px;line-height:45px;letter-spacing:5px;
+                        &::before {
+                            width:27px;
+                        } 
+                    }
+                    p {
+                        max-width:270px;font-size:14px;line-height:20px;margin-top:10px;  
+                    }
+                }
+            }
+        }
+    }
+}

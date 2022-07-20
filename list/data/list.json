@@ -106,7 +106,7 @@
             "tit": "Daum 티스토리 스킨 개편",
             "link": "https://blog.kinesis.kr/85?category=534845",
             "period": "15.11.03 ~ 15.11.12",
-            "persent": "100%",
+            "persent": "100%", 
             "tags" : "#html #css",
             "desc" : "PC/Tablet/M 대응 + 메뉴/댓글 기능 + 해상도마다 레이아웃 위치도 많이 바뀌는 편이라 생각할 것이 많았지만, 그만큼 재미있게 작업했던 프로젝트."
         },

@@ -101,6 +101,16 @@
             "desc" : "페이지 레이아웃이 정해지지 않고, 위아래로 콘텐츠가 위치할 수 있는 경우의 수가 많아 라인, 여백 등으로 이슈가 있었지만 css선택자를 이용해 많은 경우의 수를 대응했던 작업."
         },
         {   
+            "img" : "portfolio3",
+            "category" : "반응형",
+            "tit": "Daum 티스토리 스킨 개편",
+            "link": "https://blog.kinesis.kr/85?category=534845",
+            "period": "15.11.03 ~ 15.11.12",
+            "persent": "100%",
+            "tags" : "#html #css",
+            "desc" : "PC/Tablet/M 대응 + 메뉴/댓글 기능 + 해상도마다 레이아웃 위치도 많이 바뀌는 편이라 생각할 것이 많았지만, 그만큼 재미있게 작업했던 프로젝트."
+        },
+        {   
             "img" : "portfolio1",
             "category" : "PC",
             "tit": "Daum 백과사전",
